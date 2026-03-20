@@ -1,0 +1,391 @@
+{
+  "builds": [
+    {
+      "version": "8.5.4",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php",
+      "sha256": "6cdaaceaecd1859899105d27ef3bb87bf130ac4fe081a181d1f08f8af91e060c",
+      "size_bytes": 30162840,
+      "built_at": "2026-03-19T22:57:53.274127894+00:00"
+    },
+    {
+      "version": "8.5.4",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php",
+      "sha256": "b15625021b8bf57763ef05dca670aa1c9e74ff11c40ee3578b6945d89a6607dc",
+      "size_bytes": 30162840,
+      "built_at": "2026-03-19T23:03:23.860655635+00:00"
+    },
+    {
+      "version": "8.5.3",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php",
+      "sha256": "e8f3fbef0eda9610711eaa557d714b2c8eb0aef339be7561868b8299bc7f7501",
+      "size_bytes": 30162840,
+      "built_at": "2026-03-19T23:07:06.040871891+00:00"
+    },
+    {
+      "version": "8.5.2",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php",
+      "sha256": "f76b724ff8e398b194d9522332b9cce05e2170789babc036d457db045695d41f",
+      "size_bytes": 30162840,
+      "built_at": "2026-03-19T23:10:48.990897447+00:00"
+    },
+    {
+      "version": "8.5.1",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php",
+      "sha256": "387573061fe672e3cb7573249742a1d2cbe76153b7d9a69ce83aa856c5268bc3",
+      "size_bytes": 30162680,
+      "built_at": "2026-03-19T23:14:52.232684002+00:00"
+    },
+    {
+      "version": "8.5.0",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php",
+      "sha256": "c9f21aafe4a9f9b01dcd9878f62a27fc4a9f1e930628d8146becddfcaecc4b45",
+      "size_bytes": 30162680,
+      "built_at": "2026-03-19T23:19:16.035394092+00:00"
+    },
+    {
+      "version": "8.5.4",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.5.4",
+      "sha256": "6ec137c0e55673aa0ed8d3158634c8301c489497c1e952ecad07ae90afa7466c",
+      "size_bytes": 30162840,
+      "built_at": "2026-03-19T23:31:20.866839103+00:00"
+    },
+    {
+      "version": "8.5.3",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.5.3",
+      "sha256": "992315838c84dbb6dfbb57dfcc9610d77f989e10efac74fcda91138f0756705a",
+      "size_bytes": 30162840,
+      "built_at": "2026-03-19T23:33:44.027781228+00:00"
+    },
+    {
+      "version": "8.5.2",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.5.2",
+      "sha256": "f72712fe519248327bf479f27b88404da3af9492c3a098c97bc7181dba079562",
+      "size_bytes": 30162840,
+      "built_at": "2026-03-19T23:36:07.211978493+00:00"
+    },
+    {
+      "version": "8.5.1",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.5.1",
+      "sha256": "6ab06a08ce728853b261d91198bf6f2bbe971c3959957ccef38424ba53614ed9",
+      "size_bytes": 30162680,
+      "built_at": "2026-03-19T23:38:30.160780774+00:00"
+    },
+    {
+      "version": "8.5.0",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.5.0",
+      "sha256": "7637ac33477fc23643448ed4716908d58908b884371fb199a3355b1203a09390",
+      "size_bytes": 30162680,
+      "built_at": "2026-03-19T23:40:51.652505293+00:00"
+    },
+    {
+      "version": "8.4.19",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.19",
+      "sha256": "dfd1a8e6145255ddf3bc288e7c68d0be3c9a519f794371306486bce5eee4b645",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:43:03.022564208+00:00"
+    },
+    {
+      "version": "8.4.18",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.18",
+      "sha256": "14ec447f3547bdf4f4979326c6862beae9833386809b8ef4dda909b349cb0215",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:45:15.342208288+00:00"
+    },
+    {
+      "version": "8.4.17",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.17",
+      "sha256": "fe187604d6496529297029b69e945a245ffefb4eace78603f113de3c8f92bce5",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:47:27.694469190+00:00"
+    },
+    {
+      "version": "8.4.16",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.16",
+      "sha256": "879709e4cf64fd328079db4c242ef94b7ad32117c80d06e6706ad98dcc8c1504",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:49:42.074880897+00:00"
+    },
+    {
+      "version": "8.4.15",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.15",
+      "sha256": "d7ee1a272103eb4b08cd2c04536981b329059d16fd380d5eb1939073bfe5aa08",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:52:12.453494658+00:00"
+    },
+    {
+      "version": "8.4.14",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.14",
+      "sha256": "d5d003142f9fb81d61407754931e538e75dd302b17450ca7335d46188ba361ed",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:55:02.707568450+00:00"
+    },
+    {
+      "version": "8.4.13",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.13",
+      "sha256": "16fba48b62c79a7c13898e9c6f0361f5e8fc4b5ccebea8655efcec968a89808a",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:57:31.693283812+00:00"
+    },
+    {
+      "version": "8.4.12",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.12",
+      "sha256": "00d7d73d837e184c2c1b5ccf7c133f9fbbbf48bebac71a907140ecb58d8d1398",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-19T23:59:45.793781911+00:00"
+    },
+    {
+      "version": "8.4.11",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.11",
+      "sha256": "38e8220a5dae3916ff0e3be49515f85b271bd20714159ad4bc0ba47b70d92138",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:02:00.977160840+00:00"
+    },
+    {
+      "version": "8.4.10",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.10",
+      "sha256": "f200ac5ef22f6b2fc2feb61ced26dd5a538116d9f21f56f2e393e462500777d6",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:04:13.928870130+00:00"
+    },
+    {
+      "version": "8.4.9",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.9",
+      "sha256": "811caf316bb85eb449b3046120a58c0c76792ee95f61e56af1968818a3eac3cb",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:06:29.143071448+00:00"
+    },
+    {
+      "version": "8.4.8",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.8",
+      "sha256": "d48c808097a39456b3fcadb3b47becb1ec045361223eb777c37d586b949a2fb0",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:08:42.980384733+00:00"
+    },
+    {
+      "version": "8.4.7",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.7",
+      "sha256": "81b699d61788f4547847e6569235c6c3672e7e0d0a01d8257d44039bd1881ab8",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:10:56.248436287+00:00"
+    },
+    {
+      "version": "8.4.6",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.6",
+      "sha256": "61981ab7a2b6677b7e27df0a76ee2ddf68d07107e93ff97d2bf5af91a505b25e",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:13:09.196343225+00:00"
+    },
+    {
+      "version": "8.4.5",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.5",
+      "sha256": "c118b1c69fd1769eeccf3afd5e86858e8d4aba088b95f8aaa28895760f961d60",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:15:24.123737149+00:00"
+    },
+    {
+      "version": "8.4.4",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.4",
+      "sha256": "0d649f7aadac7016f5b3ba2880a232d166c024b80ba8f7ed76602719945a163c",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:17:38.495727416+00:00"
+    },
+    {
+      "version": "8.4.3",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.3",
+      "sha256": "a745444b9dd4d413c6f61b908cb6e583ba3a1503d012e2016f6a5f7e0e25ffb2",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:19:53.520637098+00:00"
+    },
+    {
+      "version": "8.4.2",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.2",
+      "sha256": "4e974ba890ab112e7276aabfc911ec2c177e6e655f55720bf183da794856a857",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:22:07.892127221+00:00"
+    },
+    {
+      "version": "8.4.1",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.1",
+      "sha256": "8fda0f6feec719d747fd5afd2cfbf95c80e4912c6f1e224b930773772b6bca06",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:24:36.570091916+00:00"
+    },
+    {
+      "version": "8.4.0",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.4.0",
+      "sha256": "c312fe51b50a4bf323ebc39c1d3b6a48bfd9fa2546f0a105c5ff3fe7f14ed56a",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:27:21.191824076+00:00"
+    },
+    {
+      "version": "8.3.30",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.30",
+      "sha256": "524011e15de343695baac78df62c4623eeef45d72779779bc1c02f736d665aac",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:30:01.284607640+00:00"
+    },
+    {
+      "version": "8.3.29",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.29",
+      "sha256": "b39f1816e0fa73b1340c78439522cfba30e5c5067c3f74b05c524c5ae82800a0",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:32:36.142014761+00:00"
+    },
+    {
+      "version": "8.3.28",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.28",
+      "sha256": "4c7329858ad7932c79f99de94fc164b3dabc88ff0ea99506c602ce0fe60c3160",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:35:18.343765271+00:00"
+    },
+    {
+      "version": "8.3.27",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.27",
+      "sha256": "d81d22f86598ed4d284dfbdde80e00cafe4252b1d8f1a51b0cf75157a95b1cf7",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:37:59.559751601+00:00"
+    },
+    {
+      "version": "8.3.26",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.26",
+      "sha256": "c5c5f2b2eaf12913dd64ebd15f309f479e4aa5ff083a9b243b684fe744eaddc6",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:40:38.817207772+00:00"
+    },
+    {
+      "version": "8.3.25",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.25",
+      "sha256": "88e8badd2eaa651c3d5a3b761e0ac516a447b65fd8dc3fb54ffaad717129bb48",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:43:19.480167299+00:00"
+    },
+    {
+      "version": "8.3.24",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.24",
+      "sha256": "c7469f9676a7d1b4774b5eeeb144e9a0b80eee257da7fffcf17a4af7a47da197",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:45:46.596771906+00:00"
+    },
+    {
+      "version": "8.3.23",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.23",
+      "sha256": "5c0b7b3e43141560da2ddb5901fb98bbcf1455c75f578dae25d30675d71a8183",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:48:00.372186471+00:00"
+    },
+    {
+      "version": "8.3.22",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.22",
+      "sha256": "27998b5137442f692449eb08f16d6245dca0cb089fb7de11c68c71a3f0da4753",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:50:14.271391250+00:00"
+    },
+    {
+      "version": "8.3.21",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.21",
+      "sha256": "7f91217b81942d5c70edd573b037a7c042c0c61c3ef7c2098541de40103f9acc",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:52:26.268672519+00:00"
+    },
+    {
+      "version": "8.3.20",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.20",
+      "sha256": "1a3b36950ded99d56f1045b2fe21c645099fa387b8fe0a22c39823f6844f7a08",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:54:39.752475800+00:00"
+    },
+    {
+      "version": "8.3.19",
+      "platform": "linux-x64",
+      "status": "Success",
+      "output_path": "./builds/linux-x64/php-8.3.19",
+      "sha256": "9077e8d2962de97aa3c60d7cd6c2c53daac76dafc516ae25cc61ce5b7486d588",
+      "size_bytes": 20997160,
+      "built_at": "2026-03-20T00:56:51.894989185+00:00"
+    }
+  ]
+}
