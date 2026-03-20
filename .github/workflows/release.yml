@@ -1,0 +1,66 @@
+name: Release PHP Binaries
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  package-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Package binaries
+        id: package
+        run: |
+          chmod +x scripts/package-release.sh
+          ./scripts/package-release.sh
+          
+          # Output version for later use
+          VERSION="${GITHUB_REF_NAME#v}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "PHP ${{ steps.package.outputs.version }}"
+          body: |
+            ## PHP Runtime ${{ steps.package.outputs.version }}
+            
+            ### Assets
+            
+            Download the appropriate archive for your platform:
+            - `php-${{ steps.package.outputs.version }}-linux-x64.tar.gz` - Linux x86_64
+            - `php-${{ steps.package.outputs.version }}-macos-arm64.tar.gz` - macOS ARM64 (Apple Silicon)
+            - `php-${{ steps.package.outputs.version }}-macos-x64.tar.gz` - macOS x86_64
+            - `php-${{ steps.package.outputs.version }}-windows-x64.zip` - Windows x86_64
+            
+            ### Verification
+            
+            Verify downloads using `checksums-${{ steps.package.outputs.version }}.txt`.
+            
+            ### API Access
+            
+            ```bash
+            # Get latest release info
+            curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest
+            
+            # Download specific asset
+            curl -L -O https://github.com/${{ github.repository }}/releases/download/v${{ steps.package.outputs.version }}/php-${{ steps.package.outputs.version }}-linux-x64.tar.gz
+            ```
+          files: |
+            dist/*.tar.gz
+            dist/*.txt
+            dist/*.json
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
