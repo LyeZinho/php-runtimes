@@ -76,7 +76,9 @@ impl Platform {
     }
 
     pub fn should_use_docker(&self) -> bool {
-        self.is_windows() && !cfg!(target_os = "windows")
+        // TODO: Enable Windows cross-compilation when sigsetjmp issue is resolved
+        // For now, focus on Linux-only builds
+        false
     }
 }
 

@@ -36,9 +36,11 @@ git push origin v8.5.4
 ```
 
 The CI will automatically:
-1. Package binaries for all platforms
+1. Package binaries for supported platforms (currently Linux x64)
 2. Create a GitHub Release
 3. Attach .tar.gz archives and checksums
+
+**Note:** Windows support is planned but not yet implemented due to cross-compilation limitations.
 
 ## Version Manifest
 

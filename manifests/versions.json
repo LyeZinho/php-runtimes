@@ -1,6 +1,554 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-03-21T00:29:39Z",
+  "updated_at": "2026-03-21T02:00:04Z",
   "repository": "LyeZinho/php-runtimes",
-  "versions": []
+  "versions": [
+    {
+      "version": "8.5.4",
+      "tag": "v8.5.4",
+      "published_at": "2026-03-21T01:53:44Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.5.4",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.5.4-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.5.4/php-8.5.4-linux-x64.tar.gz",
+          "size_bytes": 169956494,
+          "sha256": "2a99aaf8bd2e98ef2cf5028fa62ac165a06d144d2672f15665e72dd815d9ed6c"
+        }
+      ]
+    },
+    {
+      "version": "8.5.3",
+      "tag": "v8.5.3",
+      "published_at": "2026-03-21T01:59:40Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.5.3",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.5.3-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.5.3/php-8.5.3-linux-x64.tar.gz",
+          "size_bytes": 5776985,
+          "sha256": "bbe52b8fe22de836bfc00689eb3b9ee654d525e179f105e51bcca7efa3370a40"
+        }
+      ]
+    },
+    {
+      "version": "8.5.2",
+      "tag": "v8.5.2",
+      "published_at": "2026-03-21T01:59:36Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.5.2",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.5.2-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.5.2/php-8.5.2-linux-x64.tar.gz",
+          "size_bytes": 5773643,
+          "sha256": "ed7892750205c7bd0a76f3e8c4d372cd736838a5e7bf4a003b1c4cb91ac4baf8"
+        }
+      ]
+    },
+    {
+      "version": "8.5.1",
+      "tag": "v8.5.1",
+      "published_at": "2026-03-21T01:59:31Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.5.1",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.5.1-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.5.1/php-8.5.1-linux-x64.tar.gz",
+          "size_bytes": 5769289,
+          "sha256": "36123698f8c5f38fad89d13918af119aa1d061d0b086f2f532f06069bdd67803"
+        }
+      ]
+    },
+    {
+      "version": "8.5.0",
+      "tag": "v8.5.0",
+      "published_at": "2026-03-21T01:59:27Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.5.0",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.5.0-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.5.0/php-8.5.0-linux-x64.tar.gz",
+          "size_bytes": 5769255,
+          "sha256": "faf1427f89e5778ba0e851c6bd6b1e8596ce588694a38eb482c25fd1ddf337e8"
+        }
+      ]
+    },
+    {
+      "version": "8.4.19",
+      "tag": "v8.4.19",
+      "published_at": "2026-03-21T01:59:21Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.19",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.19-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.19/php-8.4.19-linux-x64.tar.gz",
+          "size_bytes": 4297571,
+          "sha256": "2282d4186931f144e83ea8ab6ab5fa9f8cbfe95b8581b696fc6b63aa44883b0e"
+        }
+      ]
+    },
+    {
+      "version": "8.4.18",
+      "tag": "v8.4.18",
+      "published_at": "2026-03-21T01:59:18Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.18",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.18-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.18/php-8.4.18-linux-x64.tar.gz",
+          "size_bytes": 4297328,
+          "sha256": "661b2764f8f8606166b0a3269dbdd887534f5da3d088b03cb2bd64bd724764f2"
+        }
+      ]
+    },
+    {
+      "version": "8.4.17",
+      "tag": "v8.4.17",
+      "published_at": "2026-03-21T01:59:14Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.17",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.17-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.17/php-8.4.17-linux-x64.tar.gz",
+          "size_bytes": 4297596,
+          "sha256": "55e43cfc9fe4eaa88ffad442513d398cf1ca6c076e1f9c7e94f78f7cf2619ac7"
+        }
+      ]
+    },
+    {
+      "version": "8.4.16",
+      "tag": "v8.4.16",
+      "published_at": "2026-03-21T01:59:10Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.16",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.16-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.16/php-8.4.16-linux-x64.tar.gz",
+          "size_bytes": 4296762,
+          "sha256": "9012693c890c9dde752d80bbf3dfe1063aeb16bee5b3f4d38d2fe5478266b5b0"
+        }
+      ]
+    },
+    {
+      "version": "8.4.15",
+      "tag": "v8.4.15",
+      "published_at": "2026-03-21T01:59:06Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.15",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.15-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.15/php-8.4.15-linux-x64.tar.gz",
+          "size_bytes": 4296808,
+          "sha256": "d192ca96e5e52c984bd362f60b9180c4d2c27ea27db83549137f97e9a0df02c7"
+        }
+      ]
+    },
+    {
+      "version": "8.4.14",
+      "tag": "v8.4.14",
+      "published_at": "2026-03-21T01:59:02Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.14",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.14-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.14/php-8.4.14-linux-x64.tar.gz",
+          "size_bytes": 169954860,
+          "sha256": "60c17cfbaed45651d27deda8d1b058fa8e67447b725473f9add98cbd7396b613"
+        }
+      ]
+    },
+    {
+      "version": "8.4.13",
+      "tag": "v8.4.13",
+      "published_at": "2026-03-21T01:58:58Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.13",
+      "platforms": []
+    },
+    {
+      "version": "8.4.12",
+      "tag": "v8.4.12",
+      "published_at": "2026-03-21T01:58:55Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.12",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.12-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.12/php-8.4.12-linux-x64.tar.gz",
+          "size_bytes": 169955727,
+          "sha256": "7d566787fb7490f8eac547814815a788752454a0d75f6a92d1b0077a3d0f3afc"
+        }
+      ]
+    },
+    {
+      "version": "8.4.11",
+      "tag": "v8.4.11",
+      "published_at": "2026-03-21T01:58:51Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.11",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.11-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.11/php-8.4.11-linux-x64.tar.gz",
+          "size_bytes": 169956951,
+          "sha256": "76c0d36c4f6b5b4f44e331c6175fdf65ef90fdbf602c90010bd4e44bfb0489a3"
+        }
+      ]
+    },
+    {
+      "version": "8.4.10",
+      "tag": "v8.4.10",
+      "published_at": "2026-03-21T01:58:47Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.10",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.10-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.10/php-8.4.10-linux-x64.tar.gz",
+          "size_bytes": 169955111,
+          "sha256": "ce76fb8460012e3c3e237dc72b33f6850117b0cbbe0c73e4010098402c3dbb07"
+        }
+      ]
+    },
+    {
+      "version": "8.4.9",
+      "tag": "v8.4.9",
+      "published_at": "2026-03-21T01:58:43Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.9",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.9-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.9/php-8.4.9-linux-x64.tar.gz",
+          "size_bytes": 169958374,
+          "sha256": "d3d3e06a4343193fb3ad599eb8a979cd49b6fa4da80ff7bd91c0aa05b6da686e"
+        }
+      ]
+    },
+    {
+      "version": "8.4.8",
+      "tag": "v8.4.8",
+      "published_at": "2026-03-21T01:58:39Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.8",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.8-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.8/php-8.4.8-linux-x64.tar.gz",
+          "size_bytes": 169959525,
+          "sha256": "11231854bb5822bc0a2823949fe391cbadf3cc0a11252b7de87943b3ec3a0c13"
+        }
+      ]
+    },
+    {
+      "version": "8.4.7",
+      "tag": "v8.4.7",
+      "published_at": "2026-03-21T01:58:35Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.7",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.7-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.7/php-8.4.7-linux-x64.tar.gz",
+          "size_bytes": 169954896,
+          "sha256": "82b824ac2f31213cae8b3227b16ef0990902e811d86205495b5493fd25b0eda5"
+        }
+      ]
+    },
+    {
+      "version": "8.4.6",
+      "tag": "v8.4.6",
+      "published_at": "2026-03-21T01:58:28Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.6",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.6-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.6/php-8.4.6-linux-x64.tar.gz",
+          "size_bytes": 169955602,
+          "sha256": "751c7d332ad8f98c4a54b2dd49d4d54ad00b224ce12d0404c552d5ed10fd4acd"
+        }
+      ]
+    },
+    {
+      "version": "8.4.5",
+      "tag": "v8.4.5",
+      "published_at": "2026-03-21T01:58:25Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.5",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.5-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.5/php-8.4.5-linux-x64.tar.gz",
+          "size_bytes": 169954834,
+          "sha256": "83145ad48aba5d59056977757cef5b2d29ce676e3ebb3ce3a67bc065297ce0a7"
+        }
+      ]
+    },
+    {
+      "version": "8.4.4",
+      "tag": "v8.4.4",
+      "published_at": "2026-03-21T01:58:20Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.4",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.4-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.4/php-8.4.4-linux-x64.tar.gz",
+          "size_bytes": 169956617,
+          "sha256": "3d9ad3988b5b8b1e39ae1d7f4644d4ca971ccccb9a34986a00e45f312938f60f"
+        }
+      ]
+    },
+    {
+      "version": "8.4.3",
+      "tag": "v8.4.3",
+      "published_at": "2026-03-21T01:58:16Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.3",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.3-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.3/php-8.4.3-linux-x64.tar.gz",
+          "size_bytes": 169955652,
+          "sha256": "082b049bd9e517956692f62ae752ef83050b2b1d4cbcdefd523191f6b90ad3b6"
+        }
+      ]
+    },
+    {
+      "version": "8.4.2",
+      "tag": "v8.4.2",
+      "published_at": "2026-03-21T01:58:12Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.2",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.2-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.2/php-8.4.2-linux-x64.tar.gz",
+          "size_bytes": 169956267,
+          "sha256": "eee66eab9ac707ab26ae7a83f4f132c4c093e176f8a32b583767e08bb2dc30fc"
+        }
+      ]
+    },
+    {
+      "version": "8.4.1",
+      "tag": "v8.4.1",
+      "published_at": "2026-03-21T01:58:08Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.1",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.1-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.1/php-8.4.1-linux-x64.tar.gz",
+          "size_bytes": 169956712,
+          "sha256": "9dfe4dcc5e7a69c412682b6cf99d8910472b0fe4990bf8f94b2a4b74aff2dd9c"
+        }
+      ]
+    },
+    {
+      "version": "8.4.0",
+      "tag": "v8.4.0",
+      "published_at": "2026-03-21T01:58:04Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.4.0",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.4.0-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.4.0/php-8.4.0-linux-x64.tar.gz",
+          "size_bytes": 169955649,
+          "sha256": "c89bcdd5e67e2c85021a66af7b9984d99d842f2f64fe5d1057eb4a3f7d218b1b"
+        }
+      ]
+    },
+    {
+      "version": "8.3.30",
+      "tag": "v8.3.30",
+      "published_at": "2026-03-21T01:58:00Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.30",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.30-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.30/php-8.3.30-linux-x64.tar.gz",
+          "size_bytes": 169956502,
+          "sha256": "16b57e35203cfb1166e652d25243c877cc87918050ec88b39908a8329fd74391"
+        }
+      ]
+    },
+    {
+      "version": "8.3.29",
+      "tag": "v8.3.29",
+      "published_at": "2026-03-21T01:57:56Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.29",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.29-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.29/php-8.3.29-linux-x64.tar.gz",
+          "size_bytes": 169956460,
+          "sha256": "f9b334302e423146345724331cb026834f36109617464c68656a405ebdfc9efb"
+        }
+      ]
+    },
+    {
+      "version": "8.3.28",
+      "tag": "v8.3.28",
+      "published_at": "2026-03-21T01:57:52Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.28",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.28-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.28/php-8.3.28-linux-x64.tar.gz",
+          "size_bytes": 169955785,
+          "sha256": "ee5d459430b6f31f56ad979788e25b918dc5712a341442e4d2924dd8a6450ed6"
+        }
+      ]
+    },
+    {
+      "version": "8.3.27",
+      "tag": "v8.3.27",
+      "published_at": "2026-03-21T01:57:48Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.27",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.27-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.27/php-8.3.27-linux-x64.tar.gz",
+          "size_bytes": 169956087,
+          "sha256": "dbd34700dd90ac3a3784cbdb73c738ca7d10692091dd34bf4fa5ffc1d965e6dd"
+        }
+      ]
+    },
+    {
+      "version": "8.3.26",
+      "tag": "v8.3.26",
+      "published_at": "2026-03-21T01:57:45Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.26",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.26-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.26/php-8.3.26-linux-x64.tar.gz",
+          "size_bytes": 169955865,
+          "sha256": "aabc3b493ccb456f880e97614aac71cb6fe9395136d3236a74d12ac635e1b0f2"
+        }
+      ]
+    },
+    {
+      "version": "8.3.25",
+      "tag": "v8.3.25",
+      "published_at": "2026-03-21T01:57:41Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.25",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.25-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.25/php-8.3.25-linux-x64.tar.gz",
+          "size_bytes": 169956427,
+          "sha256": "6758c3755eb9c2a8774a66548b54631c32af48ee3f8bdb82e7f2d2749aa58371"
+        }
+      ]
+    },
+    {
+      "version": "8.3.24",
+      "tag": "v8.3.24",
+      "published_at": "2026-03-21T01:57:37Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.24",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.24-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.24/php-8.3.24-linux-x64.tar.gz",
+          "size_bytes": 169957136,
+          "sha256": "3c0f486e4674d1506bc3311f822ccb3cb3d785eb17a15a904a72ea0cd50b2af1"
+        }
+      ]
+    },
+    {
+      "version": "8.3.23",
+      "tag": "v8.3.23",
+      "published_at": "2026-03-21T01:57:33Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.23",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.23-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.23/php-8.3.23-linux-x64.tar.gz",
+          "size_bytes": 169956565,
+          "sha256": "e87eaefad80636c4401a3d4cea0c8caa2ae46c0e1cccdf8a95e6814025764ce0"
+        }
+      ]
+    },
+    {
+      "version": "8.3.22",
+      "tag": "v8.3.22",
+      "published_at": "2026-03-21T01:57:29Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.22",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.22-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.22/php-8.3.22-linux-x64.tar.gz",
+          "size_bytes": 169956475,
+          "sha256": "68bdc72fc937dc2aba0f425e221b78d5bb4b9794c6329bbb0d849bd2245269a1"
+        }
+      ]
+    },
+    {
+      "version": "8.3.21",
+      "tag": "v8.3.21",
+      "published_at": "2026-03-21T01:57:25Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.21",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.21-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.21/php-8.3.21-linux-x64.tar.gz",
+          "size_bytes": 169956100,
+          "sha256": "c419051e552a6c0a5bfd2c1d2bc7d0dbf4fc78b5bc837121455fb3da3575bf41"
+        }
+      ]
+    },
+    {
+      "version": "8.3.20",
+      "tag": "v8.3.20",
+      "published_at": "2026-03-21T01:57:22Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.20",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.20-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.20/php-8.3.20-linux-x64.tar.gz",
+          "size_bytes": 169956537,
+          "sha256": "59aa1e0b283a24ea253371005a50d7bf312182a744427563fe502da83a377066"
+        }
+      ]
+    },
+    {
+      "version": "8.3.19",
+      "tag": "v8.3.19",
+      "published_at": "2026-03-21T01:55:37Z",
+      "html_url": "https://github.com/LyeZinho/php-runtimes/releases/tag/v8.3.19",
+      "platforms": [
+        {
+          "platform": "linux",
+          "filename": "php-8.3.19-linux-x64.tar.gz",
+          "download_url": "https://github.com/LyeZinho/php-runtimes/releases/download/v8.3.19/php-8.3.19-linux-x64.tar.gz",
+          "size_bytes": 169954923,
+          "sha256": "6378f890ea547fe438b0620fb4dc4e7a89e00db36b10a0eb260260bc791597e7"
+        }
+      ]
+    }
+  ]
 }

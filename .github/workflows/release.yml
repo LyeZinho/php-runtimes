@@ -39,9 +39,8 @@ jobs:
             
             Download the appropriate archive for your platform:
             - `php-${{ steps.package.outputs.version }}-linux-x64.tar.gz` - Linux x86_64
-            - `php-${{ steps.package.outputs.version }}-macos-arm64.tar.gz` - macOS ARM64 (Apple Silicon)
-            - `php-${{ steps.package.outputs.version }}-macos-x64.tar.gz` - macOS x86_64
-            - `php-${{ steps.package.outputs.version }}-windows-x64.zip` - Windows x86_64
+            
+            **Note:** Additional platforms (macOS, Windows) are planned but not yet available.
             
             ### Verification
             
