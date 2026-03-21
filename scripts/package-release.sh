@@ -18,11 +18,28 @@ mkdir -p "$DIST_DIR"
 for platform_dir in builds/*/; do
   platform=$(basename "$platform_dir")
   [[ "$platform" == "manifest.json" ]] && continue
+  [[ "$platform" == "dist" ]] && continue
+  [[ "$platform" == .* ]] && continue
+  
+  # Check if binary exists for this version
+  binary="builds/$platform/php-$VERSION"
+  if [[ ! -f "$binary" ]]; then
+    echo "Skipping $platform - php-$VERSION not found"
+    continue
+  fi
   
   echo "Packaging $platform..."
   
-  # Create tar.gz archive
-  tar -czf "$DIST_DIR/php-$VERSION-$platform.tar.gz" -C "builds" "$platform"
+  # Create temporary directory with only this version's binary
+  TMP_PKG=$(mktemp -d)
+  mkdir -p "$TMP_PKG/$platform"
+  cp "$binary" "$TMP_PKG/$platform/"
+  
+  # Create tar.gz archive with only this version
+  tar -czf "$DIST_DIR/php-$VERSION-$platform.tar.gz" -C "$TMP_PKG" "$platform"
+  
+  # Cleanup
+  rm -rf "$TMP_PKG"
   
   # Generate checksum
   sha256sum "$DIST_DIR/php-$VERSION-$platform.tar.gz" >> "$DIST_DIR/checksums-$VERSION.txt"

@@ -21,6 +21,7 @@ NC='\033[0m'
 # Parse arguments
 DRY_RUN=false
 SKIP_EXISTING=true
+DELETE_EXISTING=false
 
 while [[ $# -gt 0 ]]; do
   case $1 in
@@ -32,6 +33,11 @@ while [[ $# -gt 0 ]]; do
       SKIP_EXISTING=false
       shift
       ;;
+    --replace)
+      SKIP_EXISTING=false
+      DELETE_EXISTING=true
+      shift
+      ;;
     --help|-h)
       echo "Create GitHub releases for all PHP versions"
       echo ""
@@ -40,6 +46,7 @@ while [[ $# -gt 0 ]]; do
       echo "Options:"
       echo "  --dry-run    Show what would be done without making changes"
       echo "  --force      Create releases even if they already exist"
+      echo "  --replace    Delete existing releases and recreate them"
       echo "  --help, -h   Show this help"
       exit 0
       ;;
@@ -105,19 +112,34 @@ for VERSION in $VERSIONS; do
   echo -e "${BLUE}[$COUNT/$TOTAL] Processing PHP $VERSION${NC}"
   
   # Check if release already exists
-  if [[ "$SKIP_EXISTING" == true ]]; then
-    if gh release view "$TAG" &> /dev/null; then
+  if gh release view "$TAG" &> /dev/null; then
+    if [[ "$DELETE_EXISTING" == true ]]; then
+      echo -e "  ${YELLOW}Deleting existing release $TAG...${NC}"
+      if [[ "$DRY_RUN" == false ]]; then
+        gh release delete "$TAG" --yes 2>/dev/null || true
+      fi
+    elif [[ "$SKIP_EXISTING" == true ]]; then
       echo -e "  ${YELLOW}Release $TAG already exists, skipping${NC}"
       SKIPPED=$((SKIPPED + 1))
       continue
     fi
   fi
   
-  # Package the binary
+  # Package the binary (only this specific version)
   ARCHIVE="$DIST_DIR/php-$VERSION-linux-x64.tar.gz"
   
   echo "  Packaging..."
-  tar -czf "$ARCHIVE" -C "$BUILD_DIR" "php-$VERSION"
+  
+  # Create temporary directory with only this version's binary
+  TMP_PKG=$(mktemp -d)
+  mkdir -p "$TMP_PKG/linux-x64"
+  cp "$BUILD_DIR/php-$VERSION" "$TMP_PKG/linux-x64/"
+  
+  # Create tar.gz archive
+  tar -czf "$ARCHIVE" -C "$TMP_PKG" "linux-x64"
+  
+  # Cleanup
+  rm -rf "$TMP_PKG"
   
   # Generate checksum
   CHECKSUM_FILE="$DIST_DIR/checksums-$VERSION.txt"
