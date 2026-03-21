@@ -185,16 +185,15 @@ pub fn build_single(
 
     clean_bloat(&source_dir).ok();
 
-    run_configure(&source_dir, platform).context("Configure failed")?;
-
-    let php_binary = run_make(&source_dir, platform).context("Make failed")?;
+    let php_binary = build_php(&source_dir, platform, version, &config.output_dir(platform))
+        .context("Build failed")?;
 
     let _ = strip_binary(&php_binary).ok();
 
     verify_binary(&php_binary).context("Binary verification failed")?;
 
     let output_dir = config.output_dir(platform);
-    let final_path = copy_to_output(&php_binary, &output_dir, version)?;
+    let final_path = copy_to_output(&php_binary, &output_dir, version, platform)?;
 
     let sha256 = compute_sha256(&final_path)?;
     let size_bytes = std::fs::metadata(&final_path)?.len();

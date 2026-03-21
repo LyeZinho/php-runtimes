@@ -74,6 +74,10 @@ impl Platform {
     pub fn is_windows(&self) -> bool {
         matches!(self, Platform::WindowsX64)
     }
+
+    pub fn should_use_docker(&self) -> bool {
+        self.is_windows() && !cfg!(target_os = "windows")
+    }
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -193,6 +197,21 @@ pub fn get_configure_flags(platform: Platform) -> Vec<&'static str> {
     }
 
     flags
+}
+
+pub fn build_php(
+    source_dir: &Path,
+    platform: Platform,
+    version: &str,
+    output_dir: &Path,
+) -> Result<PathBuf> {
+    if platform.should_use_docker() {
+        return run_docker_cross_compile(source_dir, output_dir, version);
+    }
+
+    run_configure(source_dir, platform).context("Configure failed")?;
+    let php_binary = run_make(source_dir, platform).context("Make failed")?;
+    Ok(php_binary)
 }
 
 pub fn check_dependencies(platform: Platform) -> Result<()> {
@@ -478,6 +497,58 @@ pub fn run_make(source_dir: &Path, platform: Platform) -> Result<PathBuf> {
     }
 }
 
+pub fn run_docker_cross_compile(
+    source_dir: &Path,
+    output_dir: &Path,
+    version: &str,
+) -> Result<PathBuf> {
+    info!("Running Docker cross-compilation for Windows");
+
+    // Create output directory
+    std::fs::create_dir_all(output_dir)?;
+
+    // Run Docker container with MinGW-w64
+    let mut cmd = Command::new("docker");
+    cmd.arg("run")
+        .arg("--rm")
+        .arg("-v")
+        .arg(&format!("{}:/work", source_dir.display()))
+        .arg("-v")
+        .arg(&format!("{}:/output", output_dir.display()))
+        .arg("dockcross/windows-x64")
+        .arg("bash")
+        .arg("-c")
+        .arg(format!(
+            "cd /work && \
+             ./configure --host=x86_64-w64-mingw32 --prefix=/tmp/install \
+             && make -j$(nproc) \
+             && cp sapi/cli/php.exe /output/php-{}.exe",
+            version
+        ));
+
+    info!("Docker command: {:?}", cmd);
+
+    let output = cmd
+        .output()
+        .context("Failed to run Docker cross-compilation")?;
+
+    if !output.status.success() {
+        let stderr = String::from_utf8_lossy(&output.stderr);
+        let stdout = String::from_utf8_lossy(&output.stdout);
+        error!("Docker stdout: {}", stdout);
+        error!("Docker stderr: {}", stderr);
+        anyhow::bail!("Docker cross-compilation failed");
+    }
+
+    // Return path to compiled binary
+    let binary_path = output_dir.join(format!("php-{}.exe", version));
+    if binary_path.exists() {
+        Ok(binary_path)
+    } else {
+        anyhow::bail!("Compiled binary not found at {:?}", binary_path);
+    }
+}
+
 pub fn strip_binary(binary_path: &Path) -> Result<u64> {
     info!("Stripping binary {:?}", binary_path);
 
@@ -534,10 +605,17 @@ pub fn compute_sha256(path: &Path) -> Result<String> {
     Ok(format!("{:x}", hasher.finalize()))
 }
 
-pub fn copy_to_output(binary_path: &Path, output_dir: &Path, version: &str) -> Result<PathBuf> {
+pub fn copy_to_output(
+    binary_path: &Path,
+    output_dir: &Path,
+    version: &str,
+    platform: Platform,
+) -> Result<PathBuf> {
     std::fs::create_dir_all(output_dir)?;
 
-    let output_name = if cfg!(target_os = "windows") {
+    let output_name = if platform.is_windows() || platform.should_use_docker() {
+        format!("php-{}.exe", version)
+    } else if cfg!(target_os = "windows") {
         format!("php-{}.exe", version)
     } else {
         format!("php-{}", version)
