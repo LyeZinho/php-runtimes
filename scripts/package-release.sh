@@ -59,3 +59,4 @@ echo "}" >> "$DIST_DIR/manifest-$VERSION.json"
 
 echo "Packaging complete. Assets in $DIST_DIR/"
 ls -lh "$DIST_DIR/"
+# GitHub Releases integration
