@@ -1,0 +1,102 @@
+warning: unused import: `std::collections::HashMap`
+ --> src/curator/build.rs:3:5
+  |
+3 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `version`
+   --> src/curator/build.rs:539:62
+    |
+539 | pub fn copy_to_output(binary_path: &Path, output_dir: &Path, version: &str) -> Result<PathBuf> {
+    |                                                              ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_version`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: `php-curator` (bin "php-curator") generated 2 warnings (run `cargo fix --bin "php-curator" -p php-curator` to apply 2 suggestions)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running `target/debug/php-curator build-all --platforms linux-x64 --path .`
+Building for platforms: [LinuxX64]
+[2m2026-03-19T22:59:52.351997Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Building PHP 8.5.4 for platform LinuxX64
+[2m2026-03-19T22:59:52.352096Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracting source from "./sources/php-8.5.4.tar.xz"
+[2m2026-03-19T22:59:53.603028Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracted to "/home/pedro/repo/php-runtimes/temp/php-8.5.4"
+[2m2026-03-19T22:59:53.603073Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning bloat from "/home/pedro/repo/php-runtimes/temp/php-8.5.4"
+[2m2026-03-19T22:59:54.078960Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Freed 28542408 bytes from bloat
+[2m2026-03-19T22:59:54.079002Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running configure for LinuxX64
+[2m2026-03-19T22:59:54.079038Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure command: cd "/home/pedro/repo/php-runtimes/temp/php-8.5.4" && "./configure" "--disable-all" "--enable-cli" "--enable-mbstring" "--enable-intl" "--enable-bcmath" "--enable-calendar" "--enable-exif" "--enable-ftp" "--enable-pcntl" "--enable-sockets" "--enable-fileinfo" "--enable-pdo" "--with-openssl" "--with-curl" "--with-zlib" "--with-pdo-sqlite" "--with-pdo-mysql" "--with-gettext" "--disable-phpdbg" "--disable-cgi" "--disable-fpm" "--enable-sockets" "--prefix=/home/pedro/repo/php-runtimes/temp/php-8.5.4/install"
+[2m2026-03-19T23:00:24.384263Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure completed successfully
+[2m2026-03-19T23:00:24.384319Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running make for LinuxX64
+[2m2026-03-19T23:03:22.753638Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Stripping binary "/home/pedro/repo/php-runtimes/temp/php-8.5.4/sapi/cli/php"
+[2m2026-03-19T23:03:22.836117Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Binary stripped: 67378352 -> 30162840 bytes (saved 37215512)
+[2m2026-03-19T23:03:22.836156Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Verifying binary "/home/pedro/repo/php-runtimes/temp/php-8.5.4/sapi/cli/php"
+[2m2026-03-19T23:03:22.849652Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m PHP version: PHP 8.5.4 (cli) (built: Mar 19 2026 23:02:24) (NTS)
+[2m2026-03-19T23:03:22.854995Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Copied to "./builds/linux-x64/php" (30162840 bytes)
+[2m2026-03-19T23:03:23.860689Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning up "./temp/linux-x64"
+[2m2026-03-19T23:03:23.863154Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Build complete! 30162840 bytes, SHA256: b15625021b8bf57763ef05dca670aa1c9e74ff11c40ee3578b6945d89a6607dc
+[2m2026-03-19T23:03:23.863195Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Building PHP 8.5.3 for platform LinuxX64
+[2m2026-03-19T23:03:23.863237Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracting source from "./sources/php-8.5.3.tar.xz"
+[2m2026-03-19T23:03:24.767989Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracted to "/home/pedro/repo/php-runtimes/temp/php-8.5.3"
+[2m2026-03-19T23:03:24.768027Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning bloat from "/home/pedro/repo/php-runtimes/temp/php-8.5.3"
+[2m2026-03-19T23:03:25.198379Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Freed 28528378 bytes from bloat
+[2m2026-03-19T23:03:25.198417Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running configure for LinuxX64
+[2m2026-03-19T23:03:25.198439Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure command: cd "/home/pedro/repo/php-runtimes/temp/php-8.5.3" && "./configure" "--disable-all" "--enable-cli" "--enable-mbstring" "--enable-intl" "--enable-bcmath" "--enable-calendar" "--enable-exif" "--enable-ftp" "--enable-pcntl" "--enable-sockets" "--enable-fileinfo" "--enable-pdo" "--with-openssl" "--with-curl" "--with-zlib" "--with-pdo-sqlite" "--with-pdo-mysql" "--with-gettext" "--disable-phpdbg" "--disable-cgi" "--disable-fpm" "--enable-sockets" "--prefix=/home/pedro/repo/php-runtimes/temp/php-8.5.3/install"
+[2m2026-03-19T23:03:49.989166Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure completed successfully
+[2m2026-03-19T23:03:49.989210Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running make for LinuxX64
+[2m2026-03-19T23:07:04.940804Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Stripping binary "/home/pedro/repo/php-runtimes/temp/php-8.5.3/sapi/cli/php"
+[2m2026-03-19T23:07:05.017781Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Binary stripped: 67318296 -> 30162840 bytes (saved 37155456)
+[2m2026-03-19T23:07:05.017846Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Verifying binary "/home/pedro/repo/php-runtimes/temp/php-8.5.3/sapi/cli/php"
+[2m2026-03-19T23:07:05.037877Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m PHP version: PHP 8.5.3 (cli) (built: Mar 19 2026 23:06:02) (NTS)
+[2m2026-03-19T23:07:05.042340Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Copied to "./builds/linux-x64/php" (30162840 bytes)
+[2m2026-03-19T23:07:06.040895Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning up "./temp/linux-x64"
+[2m2026-03-19T23:07:06.041192Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Build complete! 30162840 bytes, SHA256: e8f3fbef0eda9610711eaa557d714b2c8eb0aef339be7561868b8299bc7f7501
+[2m2026-03-19T23:07:06.041212Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Building PHP 8.5.2 for platform LinuxX64
+[2m2026-03-19T23:07:06.041244Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracting source from "./sources/php-8.5.2.tar.xz"
+[2m2026-03-19T23:07:07.650170Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracted to "/home/pedro/repo/php-runtimes/temp/php-8.5.2"
+[2m2026-03-19T23:07:07.650330Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning bloat from "/home/pedro/repo/php-runtimes/temp/php-8.5.2"
+[2m2026-03-19T23:07:08.123465Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Freed 28500717 bytes from bloat
+[2m2026-03-19T23:07:08.123504Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running configure for LinuxX64
+[2m2026-03-19T23:07:08.123525Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure command: cd "/home/pedro/repo/php-runtimes/temp/php-8.5.2" && "./configure" "--disable-all" "--enable-cli" "--enable-mbstring" "--enable-intl" "--enable-bcmath" "--enable-calendar" "--enable-exif" "--enable-ftp" "--enable-pcntl" "--enable-sockets" "--enable-fileinfo" "--enable-pdo" "--with-openssl" "--with-curl" "--with-zlib" "--with-pdo-sqlite" "--with-pdo-mysql" "--with-gettext" "--disable-phpdbg" "--disable-cgi" "--disable-fpm" "--enable-sockets" "--prefix=/home/pedro/repo/php-runtimes/temp/php-8.5.2/install"
+[2m2026-03-19T23:07:37.497831Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure completed successfully
+[2m2026-03-19T23:07:37.497884Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running make for LinuxX64
+[2m2026-03-19T23:10:47.819850Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Stripping binary "/home/pedro/repo/php-runtimes/temp/php-8.5.2/sapi/cli/php"
+[2m2026-03-19T23:10:47.898288Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Binary stripped: 67301464 -> 30162840 bytes (saved 37138624)
+[2m2026-03-19T23:10:47.898360Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Verifying binary "/home/pedro/repo/php-runtimes/temp/php-8.5.2/sapi/cli/php"
+[2m2026-03-19T23:10:47.948736Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m PHP version: PHP 8.5.2 (cli) (built: Mar 19 2026 23:09:58) (NTS)
+[2m2026-03-19T23:10:47.960100Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Copied to "./builds/linux-x64/php" (30162840 bytes)
+[2m2026-03-19T23:10:48.990951Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning up "./temp/linux-x64"
+[2m2026-03-19T23:10:48.998114Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Build complete! 30162840 bytes, SHA256: f76b724ff8e398b194d9522332b9cce05e2170789babc036d457db045695d41f
+[2m2026-03-19T23:10:48.998198Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Building PHP 8.5.1 for platform LinuxX64
+[2m2026-03-19T23:10:48.998245Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracting source from "./sources/php-8.5.1.tar.xz"
+[2m2026-03-19T23:10:50.140473Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracted to "/home/pedro/repo/php-runtimes/temp/php-8.5.1"
+[2m2026-03-19T23:10:50.140517Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning bloat from "/home/pedro/repo/php-runtimes/temp/php-8.5.1"
+[2m2026-03-19T23:10:50.619498Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Freed 28484279 bytes from bloat
+[2m2026-03-19T23:10:50.619536Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running configure for LinuxX64
+[2m2026-03-19T23:10:50.619558Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure command: cd "/home/pedro/repo/php-runtimes/temp/php-8.5.1" && "./configure" "--disable-all" "--enable-cli" "--enable-mbstring" "--enable-intl" "--enable-bcmath" "--enable-calendar" "--enable-exif" "--enable-ftp" "--enable-pcntl" "--enable-sockets" "--enable-fileinfo" "--enable-pdo" "--with-openssl" "--with-curl" "--with-zlib" "--with-pdo-sqlite" "--with-pdo-mysql" "--with-gettext" "--disable-phpdbg" "--disable-cgi" "--disable-fpm" "--enable-sockets" "--prefix=/home/pedro/repo/php-runtimes/temp/php-8.5.1/install"
+[2m2026-03-19T23:11:25.120142Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure completed successfully
+[2m2026-03-19T23:11:25.121744Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running make for LinuxX64
+[2m2026-03-19T23:14:50.846478Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Stripping binary "/home/pedro/repo/php-runtimes/temp/php-8.5.1/sapi/cli/php"
+[2m2026-03-19T23:14:51.033510Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Binary stripped: 67275336 -> 30162680 bytes (saved 37112656)
+[2m2026-03-19T23:14:51.033553Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Verifying binary "/home/pedro/repo/php-runtimes/temp/php-8.5.1/sapi/cli/php"
+[2m2026-03-19T23:14:51.128411Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m PHP version: PHP 8.5.1 (cli) (built: Mar 19 2026 23:13:44) (NTS)
+[2m2026-03-19T23:14:51.163690Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Copied to "./builds/linux-x64/php" (30162680 bytes)
+[2m2026-03-19T23:14:52.232753Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning up "./temp/linux-x64"
+[2m2026-03-19T23:14:52.236966Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Build complete! 30162680 bytes, SHA256: 387573061fe672e3cb7573249742a1d2cbe76153b7d9a69ce83aa856c5268bc3
+[2m2026-03-19T23:14:52.237047Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Building PHP 8.5.0 for platform LinuxX64
+[2m2026-03-19T23:14:52.237111Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracting source from "./sources/php-8.5.0.tar.xz"
+[2m2026-03-19T23:14:53.473290Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Extracted to "/home/pedro/repo/php-runtimes/temp/php-8.5.0"
+[2m2026-03-19T23:14:53.473333Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning bloat from "/home/pedro/repo/php-runtimes/temp/php-8.5.0"
+[2m2026-03-19T23:14:53.935000Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Freed 28455482 bytes from bloat
+[2m2026-03-19T23:14:53.935042Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running configure for LinuxX64
+[2m2026-03-19T23:14:53.935064Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure command: cd "/home/pedro/repo/php-runtimes/temp/php-8.5.0" && "./configure" "--disable-all" "--enable-cli" "--enable-mbstring" "--enable-intl" "--enable-bcmath" "--enable-calendar" "--enable-exif" "--enable-ftp" "--enable-pcntl" "--enable-sockets" "--enable-fileinfo" "--enable-pdo" "--with-openssl" "--with-curl" "--with-zlib" "--with-pdo-sqlite" "--with-pdo-mysql" "--with-gettext" "--disable-phpdbg" "--disable-cgi" "--disable-fpm" "--enable-sockets" "--prefix=/home/pedro/repo/php-runtimes/temp/php-8.5.0/install"
+[2m2026-03-19T23:15:23.681961Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Configure completed successfully
+[2m2026-03-19T23:15:23.682016Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Running make for LinuxX64
+[2m2026-03-19T23:19:14.933443Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Stripping binary "/home/pedro/repo/php-runtimes/temp/php-8.5.0/sapi/cli/php"
+[2m2026-03-19T23:19:15.004452Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Binary stripped: 67267224 -> 30162680 bytes (saved 37104544)
+[2m2026-03-19T23:19:15.004513Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Verifying binary "/home/pedro/repo/php-runtimes/temp/php-8.5.0/sapi/cli/php"
+[2m2026-03-19T23:19:15.046807Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m PHP version: PHP 8.5.0 (cli) (built: Mar 19 2026 23:18:13) (NTS)
+[2m2026-03-19T23:19:15.048926Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Copied to "./builds/linux-x64/php" (30162680 bytes)
+[2m2026-03-19T23:19:16.035445Z[0m [32m INFO[0m [2mphp_curator::curator::build[0m[2m:[0m Cleaning up "./temp/linux-x64"
+[2m2026-03-19T23:19:16.035959Z[0m [32m INFO[0m [2mphp_curator::curator[0m[2m:[0m Build complete! 30162680 bytes, SHA256: c9f21aafe4a9f9b01dcd9878f62a27fc4a9f1e930628d8146becddfcaecc4b45
+
+✅ Built 5 versions

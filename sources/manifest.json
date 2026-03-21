@@ -1,0 +1,780 @@
+{
+  "sources": [
+    {
+      "version": "8.5.4",
+      "filename": "php-8.5.4.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.4.tar.xz",
+      "size_bytes": 14348800,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.3",
+      "filename": "php-8.5.3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.3.tar.xz",
+      "size_bytes": 14333456,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.2",
+      "filename": "php-8.5.2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.2.tar.xz",
+      "size_bytes": 14331112,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.1",
+      "filename": "php-8.5.1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.1.tar.xz",
+      "size_bytes": 14326700,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0",
+      "filename": "php-8.5.0.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0.tar.xz",
+      "size_bytes": 14314552,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.4RC1",
+      "filename": "php-8.5.4RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.4RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.3RC1",
+      "filename": "php-8.5.3RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.3RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.2RC1",
+      "filename": "php-8.5.2RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.2RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.1RC2",
+      "filename": "php-8.5.1RC2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.1RC2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.1RC1",
+      "filename": "php-8.5.1RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.1RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0beta3",
+      "filename": "php-8.5.0beta3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0beta3.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0beta2",
+      "filename": "php-8.5.0beta2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0beta2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0beta1",
+      "filename": "php-8.5.0beta1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0beta1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0alpha4",
+      "filename": "php-8.5.0alpha4.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0alpha4.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0alpha3",
+      "filename": "php-8.5.0alpha3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0alpha3.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0alpha2",
+      "filename": "php-8.5.0alpha2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0alpha2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0alpha1",
+      "filename": "php-8.5.0alpha1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0alpha1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0RC5",
+      "filename": "php-8.5.0RC5.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0RC5.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0RC4",
+      "filename": "php-8.5.0RC4.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0RC4.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0RC3",
+      "filename": "php-8.5.0RC3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0RC3.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0RC2",
+      "filename": "php-8.5.0RC2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0RC2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.5.0RC1",
+      "filename": "php-8.5.0RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.5.0RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.19",
+      "filename": "php-8.4.19.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.19.tar.xz",
+      "size_bytes": 13684456,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.18",
+      "filename": "php-8.4.18.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.18.tar.xz",
+      "size_bytes": 13674716,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.17",
+      "filename": "php-8.4.17.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.17.tar.xz",
+      "size_bytes": 13670792,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.16",
+      "filename": "php-8.4.16.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.16.tar.xz",
+      "size_bytes": 13660836,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.15",
+      "filename": "php-8.4.15.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.15.tar.xz",
+      "size_bytes": 13652564,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.14",
+      "filename": "php-8.4.14.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.14.tar.xz",
+      "size_bytes": 13643936,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.13",
+      "filename": "php-8.4.13.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.13.tar.xz",
+      "size_bytes": 13646008,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.12",
+      "filename": "php-8.4.12.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.12.tar.xz",
+      "size_bytes": 13636100,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.11",
+      "filename": "php-8.4.11.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.11.tar.xz",
+      "size_bytes": 13632328,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.10",
+      "filename": "php-8.4.10.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.10.tar.xz",
+      "size_bytes": 13625264,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.9",
+      "filename": "php-8.4.9.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.9.tar.xz",
+      "size_bytes": 13624380,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.8",
+      "filename": "php-8.4.8.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.8.tar.xz",
+      "size_bytes": 13619152,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.7",
+      "filename": "php-8.4.7.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.7.tar.xz",
+      "size_bytes": 13616620,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.6",
+      "filename": "php-8.4.6.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.6.tar.xz",
+      "size_bytes": 13612892,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.5",
+      "filename": "php-8.4.5.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.5.tar.xz",
+      "size_bytes": 13604056,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.4",
+      "filename": "php-8.4.4.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.4.tar.xz",
+      "size_bytes": 13588560,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.3",
+      "filename": "php-8.4.3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.3.tar.xz",
+      "size_bytes": 13569728,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.2",
+      "filename": "php-8.4.2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.2.tar.xz",
+      "size_bytes": 13559320,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.1",
+      "filename": "php-8.4.1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.1.tar.xz",
+      "size_bytes": 13551368,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0",
+      "filename": "php-8.4.0.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0.tar.xz",
+      "size_bytes": 13548420,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.19RC1",
+      "filename": "php-8.4.19RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.19RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.18RC1",
+      "filename": "php-8.4.18RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.18RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.17RC1",
+      "filename": "php-8.4.17RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.17RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.16RC1",
+      "filename": "php-8.4.16RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.16RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.15RC1",
+      "filename": "php-8.4.15RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.15RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.14RC1",
+      "filename": "php-8.4.14RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.14RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.13RC1",
+      "filename": "php-8.4.13RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.13RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.12RC1",
+      "filename": "php-8.4.12RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.12RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.11RC1",
+      "filename": "php-8.4.11RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.11RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.9RC1",
+      "filename": "php-8.4.9RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.9RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.8RC1",
+      "filename": "php-8.4.8RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.8RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.7RC2",
+      "filename": "php-8.4.7RC2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.7RC2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.7RC1",
+      "filename": "php-8.4.7RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.7RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.6RC1",
+      "filename": "php-8.4.6RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.6RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.5RC1",
+      "filename": "php-8.4.5RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.5RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.4RC2",
+      "filename": "php-8.4.4RC2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.4RC2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.4RC1",
+      "filename": "php-8.4.4RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.4RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.3RC1",
+      "filename": "php-8.4.3RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.3RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.2RC1",
+      "filename": "php-8.4.2RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.2RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0beta5",
+      "filename": "php-8.4.0beta5.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0beta5.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0beta4",
+      "filename": "php-8.4.0beta4.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0beta4.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0beta3",
+      "filename": "php-8.4.0beta3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0beta3.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0beta2",
+      "filename": "php-8.4.0beta2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0beta2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0beta1",
+      "filename": "php-8.4.0beta1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0beta1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0alpha4",
+      "filename": "php-8.4.0alpha4.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0alpha4.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0alpha3",
+      "filename": "php-8.4.0alpha3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0alpha3.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0alpha2",
+      "filename": "php-8.4.0alpha2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0alpha2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0alpha1",
+      "filename": "php-8.4.0alpha1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0alpha1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0RC4",
+      "filename": "php-8.4.0RC4.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0RC4.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0RC3",
+      "filename": "php-8.4.0RC3.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0RC3.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0RC2",
+      "filename": "php-8.4.0RC2.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0RC2.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.4.0RC1",
+      "filename": "php-8.4.0RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.4.0RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.30",
+      "filename": "php-8.3.30.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.30.tar.xz",
+      "size_bytes": 12609216,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.29",
+      "filename": "php-8.3.29.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.29.tar.xz",
+      "size_bytes": 12601944,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.28",
+      "filename": "php-8.3.28.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.28.tar.xz",
+      "size_bytes": 12604244,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.27",
+      "filename": "php-8.3.27.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.27.tar.xz",
+      "size_bytes": 12592316,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.26",
+      "filename": "php-8.3.26.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.26.tar.xz",
+      "size_bytes": 12581368,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.25",
+      "filename": "php-8.3.25.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.25.tar.xz",
+      "size_bytes": 12583528,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.24",
+      "filename": "php-8.3.24.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.24.tar.xz",
+      "size_bytes": 12579100,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.23",
+      "filename": "php-8.3.23.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.23.tar.xz",
+      "size_bytes": 12577624,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.22",
+      "filename": "php-8.3.22.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.22.tar.xz",
+      "size_bytes": 12555076,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.21",
+      "filename": "php-8.3.21.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.21.tar.xz",
+      "size_bytes": 12565664,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.20",
+      "filename": "php-8.3.20.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.20.tar.xz",
+      "size_bytes": 12549020,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.19",
+      "filename": "php-8.3.19.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.19.tar.xz",
+      "size_bytes": 12560852,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.30RC1",
+      "filename": "php-8.3.30RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.30RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.29RC1",
+      "filename": "php-8.3.29RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.29RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.28RC1",
+      "filename": "php-8.3.28RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.28RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.27RC1",
+      "filename": "php-8.3.27RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.27RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.26RC1",
+      "filename": "php-8.3.26RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.26RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.25RC1",
+      "filename": "php-8.3.25RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.25RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.24RC1",
+      "filename": "php-8.3.24RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.24RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.23RC1",
+      "filename": "php-8.3.23RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.23RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.22RC1",
+      "filename": "php-8.3.22RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.22RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.21RC1",
+      "filename": "php-8.3.21RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.21RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    },
+    {
+      "version": "8.3.20RC1",
+      "filename": "php-8.3.20RC1.tar.xz",
+      "url": "https://www.php.net/distributions/php-8.3.20RC1.tar.xz",
+      "size_bytes": 498429,
+      "downloaded": true,
+      "extracted": false
+    }
+  ]
+}

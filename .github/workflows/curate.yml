@@ -1,0 +1,85 @@
+name: PHP Curator Bot
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Specific PHP version to curate (optional)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y binutils xz-utils
+
+      - name: Cache cargo registry
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/registry
+          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Cache cargo index
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/git
+          key: ${{ runner.os }}-cargo-index-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Cache cargo build
+        uses: actions/cache@v4
+        with:
+          path: target
+          key: ${{ runner.os }}-cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Build curator
+        run: cargo build --release
+
+      - name: Run curator
+        run: |
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            cargo run --release -- run --version ${{ github.event.inputs.version }}
+          else
+            cargo run --release
+          fi
+
+      - name: Create Pull Request
+        if: github.event_name == 'schedule'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          title: "bot: auto-curate PHP runtimes"
+          body: |
+            Automated PHP runtime curation update.
+            
+            Changes:
+            - Updated PHP versions
+            - Refreshed checksums
+          commit-message: "bot: auto-curate PHP runtimes"
+          branch: bot/auto-curate
+          delete-branch: true
+
+      - name: Commit and push
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config --local user.email "bot@cleanserve.dev"
+          git config --local user.name "PHP Curator Bot"
+          git add -A
+          git diff --staged --quiet || git commit -m "bot: curated PHP ${{ github.event.inputs.version || 'latest' }}"
+          git push
