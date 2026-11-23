@@ -38,6 +38,14 @@ enum Cli {
         #[arg(long, default_value = "linux-x64")]
         platform: String,
     },
+    /// Print the `./configure` flags for a platform, one per line.
+    ///
+    /// Single source of truth for the extension list: the static Linux build script
+    /// (scripts/build-linux-static.sh) reads it instead of keeping its own copy.
+    ConfigureFlags {
+        #[arg(long, default_value = "linux-x64")]
+        platform: String,
+    },
 }
 
 fn main() -> anyhow::Result<()> {
@@ -130,6 +138,18 @@ fn main() -> anyhow::Result<()> {
                 }
             };
             curator::check_deps(p)?;
+        }
+        Cli::ConfigureFlags { platform } => {
+            let p = match curator::build::Platform::from_str(&platform) {
+                Some(p) => p,
+                None => {
+                    eprintln!("Unknown platform: {}", platform);
+                    std::process::exit(1);
+                }
+            };
+            for flag in curator::build::get_configure_flags(p) {
+                println!("{}", flag);
+            }
         }
     }
 

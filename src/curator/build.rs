@@ -75,6 +75,13 @@ impl Platform {
         matches!(self, Platform::WindowsX64)
     }
 
+    /// Linux x86_64 is built fully static (musl, inside Docker) so the binary runs on any
+    /// distro. A native build links against the host's libicu/libxml2/openssl and only works
+    /// on a machine with the same library versions. Set `PHP_CURATOR_DYNAMIC=1` to opt out.
+    pub fn uses_static_docker_build(&self) -> bool {
+        matches!(self, Platform::LinuxX64) && std::env::var_os("PHP_CURATOR_DYNAMIC").is_none()
+    }
+
     pub fn should_use_docker(&self) -> bool {
         // TODO: Enable Windows cross-compilation when sigsetjmp issue is resolved
         // For now, focus on Linux-only builds
@@ -181,6 +188,30 @@ pub fn get_configure_flags(platform: Platform) -> Vec<&'static str> {
         "--with-pdo-sqlite",
         "--with-pdo-mysql",
         "--with-gettext",
+        // `--disable-all` switches these off, yet Composer and every mainstream framework
+        // (Yii, Laravel, Symfony, WordPress, Drupal) need them. Without `session`,
+        // `ctype`, `phar`, ... the app dies with "Call to undefined function".
+        "--enable-session",
+        "--enable-ctype",
+        "--enable-tokenizer",
+        "--enable-filter",
+        "--enable-phar",
+        "--enable-posix",
+        "--with-libxml",
+        "--enable-xml",
+        "--enable-dom",
+        "--enable-simplexml",
+        "--enable-xmlreader",
+        "--enable-xmlwriter",
+        "--with-sqlite3",
+        "--with-mysqli",
+        "--with-zip",
+        // Image handling (Yii captcha, WordPress/Laravel thumbnails) and libsodium.
+        "--enable-gd",
+        "--with-freetype",
+        "--with-jpeg",
+        "--with-webp",
+        "--with-sodium",
         "--disable-phpdbg",
         "--disable-cgi",
         "--disable-fpm",
@@ -189,6 +220,7 @@ pub fn get_configure_flags(platform: Platform) -> Vec<&'static str> {
     match platform {
         Platform::LinuxX64 | Platform::LinuxArm64 => {
             flags.push("--enable-sockets");
+            flags.push("--with-iconv");
         }
         Platform::MacosX64 | Platform::MacosArm64 => {
             flags.push("--with-iconv=/usr");
@@ -199,6 +231,38 @@ pub fn get_configure_flags(platform: Platform) -> Vec<&'static str> {
     }
 
     flags
+}
+
+/// Build a fully static Linux binary with `scripts/build-linux-static.sh` (needs Docker).
+/// The script reads its `./configure` flags from `get_configure_flags`, so the extension
+/// list stays defined in one place.
+pub fn build_static_linux(archive_path: &Path, version: &str, work_dir: &Path) -> Result<PathBuf> {
+    let script = Path::new(env!("CARGO_MANIFEST_DIR")).join("scripts/build-linux-static.sh");
+    anyhow::ensure!(script.exists(), "Static build script not found: {}", script.display());
+
+    std::fs::create_dir_all(work_dir)?;
+    let out = work_dir.join(format!("php-{}-static", version));
+
+    info!("Building PHP {} as a static musl binary in Docker", version);
+    let status = Command::new("bash")
+        .arg(&script)
+        .arg(version)
+        .arg("--tarball")
+        .arg(archive_path)
+        .arg("--out")
+        .arg(&out)
+        .status()
+        .context("Failed to start the static build script (is bash installed?)")?;
+
+    if !status.success() {
+        anyhow::bail!(
+            "Static build failed ({}). Logs are next to {} as *.failed-*.log",
+            status,
+            out.display()
+        );
+    }
+    anyhow::ensure!(out.exists(), "Static build produced no binary at {}", out.display());
+    Ok(out)
 }
 
 pub fn build_php(
