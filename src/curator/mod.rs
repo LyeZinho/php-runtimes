@@ -180,13 +180,17 @@ pub fn build_single(
     let temp_dir = config.temp_dir(platform);
     std::fs::create_dir_all(&temp_dir)?;
 
-    let source_dir = extract_source(&archive_path, &temp_dir)
-        .context("Failed to extract source")?;
+    let php_binary = if platform.uses_static_docker_build() {
+        build_static_linux(&archive_path, version, &temp_dir).context("Static build failed")?
+    } else {
+        let source_dir = extract_source(&archive_path, &temp_dir)
+            .context("Failed to extract source")?;
 
-    clean_bloat(&source_dir).ok();
+        clean_bloat(&source_dir).ok();
 
-    let php_binary = build_php(&source_dir, platform, version, &config.output_dir(platform))
-        .context("Build failed")?;
+        build_php(&source_dir, platform, version, &config.output_dir(platform))
+            .context("Build failed")?
+    };
 
     let _ = strip_binary(&php_binary).ok();
 
